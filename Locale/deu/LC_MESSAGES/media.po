@@ -1,0 +1,117 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Media Plugin\n"
+"POT-Creation-Date: 2013-06-09 17:18+0000\n"
+"PO-Revision-Date: 2014-03-28 12:11+0100\n"
+"Last-Translator: Robert Lang <rlang@webmatch.de>\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: Model/Media.php:46
+msgid "Le model '%s' n'a pas le comportement 'Media'"
+msgstr "Das Model %s hat kein Media-Behavior zugewiesen"
+
+#: Model/Media.php:56
+msgid "Vous ne pouvez pas uploader ce type de fichier (%s seulement)"
+msgstr "Sie haben keine Berechtigung diesen Dateitypen %s hochzuladen"
+
+#: View/Medias/index.ctp:9 View/Medias/media.ctp:28
+msgid "Nom du fichier"
+msgstr "Dateiname"
+
+#: View/Medias/index.ctp:15 View/Medias/media.ctp:35
+msgid "Titre"
+msgstr "Titel"
+
+#: View/Medias/index.ctp:19 View/Medias/media.ctp:39
+msgid "Texte alternatif"
+msgstr "Alternativtext"
+
+#: View/Medias/index.ctp:23 View/Medias/media.ctp:43
+msgid "Cible du lien"
+msgstr "Link"
+
+#: View/Medias/index.ctp:27 View/Medias/media.ctp:47
+msgid "Alignement"
+msgstr "Ausrichtung"
+
+#: View/Medias/index.ctp:30
+msgid "Aucun"
+msgstr "Keine"
+
+#: View/Medias/index.ctp:33
+msgid "Gauche"
+msgstr "Links"
+
+#: View/Medias/index.ctp:36
+msgid "Centre"
+msgstr "Mitte"
+
+#: View/Medias/index.ctp:39
+msgid "Droite"
+msgstr "Rechts"
+
+#: View/Medias/index.ctp:45 View/Medias/media.ctp:65
+msgid "Insérer dans l'article"
+msgstr "Einfügen"
+
+#: View/Medias/index.ctp:54
+msgid "Déplacer les fichiers ici"
+msgstr "Dateien hierher ziehen"
+
+#: View/Medias/index.ctp:55
+msgid "ou"
+msgstr "oder"
+
+#: View/Medias/index.ctp:56
+msgid "Parcourir"
+msgstr "Durchsuchen"
+
+#: View/Medias/index.ctp:57
+msgid "%s seulement"
+msgstr "%s nur"
+
+#: View/Medias/index.ctp:63
+msgid "Médias"
+msgstr "Bilder"
+
+#: View/Medias/index.ctp:65
+msgid "Actions"
+msgstr "Aktionen"
+
+#: View/Medias/index.ctp:157
+msgid "Voulez vous vraiment supprimer ce média ?"
+msgstr "Wollen Sie wirklich diese Datei löschen?"
+
+#: View/Medias/index.ctp:169;178 View/Medias/media.ctp:19
+msgid "Afficher"
+msgstr "Anzeigen"
+
+#: View/Medias/index.ctp:170
+msgid "Cacher"
+msgstr "Verstecken"
+
+#: View/Medias/media.ctp:12
+msgid "Mettre en image à la une"
+msgstr "Als Thumbnail verwenden"
+
+#: View/Medias/media.ctp:14;65
+msgid "Supprimer"
+msgstr "Löschen"
+
+#: View/Medias/media.ctp:17
+msgid "Insérer le lien l'article"
+msgstr "Einfügen"
+
+#: View/Medias/media.ctp:29
+msgid "Taille de l'image"
+msgstr "Bildgröße"
