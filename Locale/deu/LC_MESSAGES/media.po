@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Media Plugin\n"
 "POT-Creation-Date: 2013-06-09 17:18+0000\n"
-"PO-Revision-Date: 2014-03-28 12:11+0100\n"
+"PO-Revision-Date: 2014-03-28 15:00+0100\n"
 "Last-Translator: Robert Lang <rlang@webmatch.de>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -74,11 +74,11 @@ msgstr "oder"
 
 #: View/Medias/index.ctp:56
 msgid "Parcourir"
-msgstr "Durchsuchen"
+msgstr "Datei auswählen"
 
 #: View/Medias/index.ctp:57
 msgid "%s seulement"
-msgstr "%s nur"
+msgstr "Erlaubte Dateitypen: %s"
 
 #: View/Medias/index.ctp:63
 msgid "Médias"
