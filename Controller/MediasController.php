@@ -1,6 +1,6 @@
 <?php
-App::uses('AppController','Controller');
-class MediasController extends AppController{
+App::uses('MediaAppController','Media.Controller');
+class MediasController extends MediaAppController{
 
     public $order = array('Media.position ASC');
 

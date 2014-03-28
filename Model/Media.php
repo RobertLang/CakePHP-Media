@@ -1,5 +1,6 @@
 <?php
-class Media extends AppModel{
+App::uses('MediaAppModel', 'Media.Model');
+class Media extends MediaAppModel{
 
 	public $useTable = 'medias';
 	public $order    = 'position ASC';
@@ -61,7 +62,7 @@ class Media extends AppModel{
 			if ($model->medias['limit'] > 0 && $this->data['Media']['ref_id'] > 0) {
 				$qty = $this->find('count', array('conditions' => array('ref' => $this->data['Media']['ref'], 'ref_id' => $this->data['Media']['ref_id'])));
 				if ($qty >= $model->medias['limit']) {
-					$this->error = __d('media', "Vous ne pouvez envoyer qu'un nombre limité de fichier (%d). Veuillez en supprimer avant d'en envoyer de nouveau.", $model->medias['limit']);
+					$this->error = __d('media', "Vous ne pouvez envoyer qu'un nombre limitï¿½ de fichier (%d). Veuillez en supprimer avant d'en envoyer de nouveau.", $model->medias['limit']);
 					return false;
 				}
 			}
@@ -70,11 +71,11 @@ class Media extends AppModel{
 			if (in_array($extension, array('jpg', 'png', 'bmp', 'tiff')) && ($model->medias['max_width'] > 0 || $model->medias['max_height'] > 0 )) {
 				list($width,$height) = getimagesize($this->data['Media']['file']['tmp_name']);
 				if ($model->medias['max_width'] > 0 && $width > $model->medias['max_width']) {
-					$this->error = __d('media', "La largeur maximum autorisée est de %dpx", $model->medias['max_width']);
+					$this->error = __d('media', "La largeur maximum autorisï¿½e est de %dpx", $model->medias['max_width']);
 					return false;
 				}
 				if ($model->medias['max_height'] > 0 && $height > $model->medias['max_height']) {
-					$this->error = __d('media', "La hauteur maximum autorisée est de %dpx", $model->medias['max_height']);
+					$this->error = __d('media', "La hauteur maximum autorisï¿½e est de %dpx", $model->medias['max_height']);
 					return false;
 				}
 			}
@@ -82,7 +83,7 @@ class Media extends AppModel{
 			// Limit Image size
 			if ($model->medias['size'] > 0 && floor($this->data['Media']['file']['size'] / 1024) > $model->medias['size']) {
 				$humanSize		= $model->medias['size'] > 1024 ? round($model->medias['size']/1024,1).' Mo' : $model->medias['size'].' Ko';
-				$this->error	= __d('media', "Vous ne pouvez pas envoyer un fichier supérieur à %s", $humanSize);
+				$this->error	= __d('media', "Vous ne pouvez pas envoyer un fichier supï¿½rieur ï¿½ %s", $humanSize);
 				return false;
 			}
 
