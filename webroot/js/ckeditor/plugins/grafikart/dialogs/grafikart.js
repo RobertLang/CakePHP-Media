@@ -10,7 +10,7 @@ CKEDITOR.dialog.add('grafikart', function(editor)
 {
 	myEditorForMedia = editor;
 	return {
-		title : 'Insérer un média',
+		title : 'Bild einfügen',
 		minWidth : 1000,
 		minHeight : 500,
 		buttons : [],

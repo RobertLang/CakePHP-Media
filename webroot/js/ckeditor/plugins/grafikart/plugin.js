@@ -1,12 +1,12 @@
 CKEDITOR.plugins.add('grafikart',
 {
 	requires : [ 'iframedialog' ],
-	lang : [ 'fr' ],
+	lang : [ 'de' ],
 	
 	init : function(editor)
 	{
 		var pluginName = 'grafikart';
-		
+
 		CKEDITOR.dialog.add('grafikart', this.path + 'dialogs/grafikart.js' );
 
 		
@@ -14,7 +14,7 @@ CKEDITOR.plugins.add('grafikart',
 
 		editor.ui.addButton('Grafikart',
 		{
-				label : editor.lang.grafikart.title,
+				label : 'Bild hinzufügen',
 				command : pluginName,
 				icon: this.path + 'images/grafikart.png'
 		});

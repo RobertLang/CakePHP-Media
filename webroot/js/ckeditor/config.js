@@ -5,9 +5,9 @@
 
 CKEDITOR.editorConfig = function( config )
 {
-	config.extraPlugins = 'grafikart';
+	config.extraPlugins = 'grafikart,pastefromword';
 	// Define changes to default configuration here. For example:
-	config.language = 'fr';
+	config.language = 'de';
 	// config.uiColor = '#AADC6E';
 	config.height = 500;
 	/*
@@ -23,7 +23,7 @@ CKEDITOR.editorConfig = function( config )
 	config.toolbar = [
 		{ name: 'styles', items: [ 'Format' ] },
 		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
-		{ name: 'links', items: [ 'Link', 'Unlink', 'Anchor' ] },
+		{ name: 'links', items: [ 'Link', 'Unlink' ] },
 		{ name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
 		{ name: 'insert', items: [ 'Grafikart' ] },
 		{ name: 'tools', items: [ 'Maximize' ] },
